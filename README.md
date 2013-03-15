@@ -1,0 +1,3 @@
+Ska generaliseras...
+
+> latexmk --pdf doc.tex
