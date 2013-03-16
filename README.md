@@ -1,4 +1,4 @@
 Ska generaliseras...
 
 ### Generera PDF
-> lualatex doc.tex
+> lualatex 2012-13lp2.tex
