@@ -1,3 +1,4 @@
 Ska generaliseras...
 
-> latexmk --pdf doc.tex
+### Generera PDF
+> lualatex doc.tex

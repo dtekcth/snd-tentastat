@@ -1,0 +1,100 @@
+% License: GPL-3
+% Author: Christoffer Öjeling
+\documentclass[a4paper]{scrartcl}
+\usepackage[swedish]{babel}
+\usepackage{fontspec}
+
+\usepackage[top=1.5cm, bottom=1.5cm]{geometry}
+
+\usepackage{luacode}
+\usepackage{tikz}
+\usepackage[unicode]{hyperref}
+
+\def \title {Tentastatistik --- 2012 LP4}
+
+\hypersetup{
+	pdftitle = \title,
+	pdfauthor = {Christoffer Öjeling}
+}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{cfail}{HTML}{C1C1C1}
+\definecolor{cthree}{HTML}{FFA58B}
+\definecolor{cfour}{HTML}{8DFF8B}
+\definecolor{cfive}{HTML}{FFE98B}
+
+
+\newcommand{\gheight}{1.5cm}
+\newcommand{\kurs}[1]{{\large \bf \sffamily  #1}}
+\newcommand{\lp}[1]{\directlua{tex.print(#1)}}
+
+\begin{luacode*}
+	function draw(nU, n3, n4, n5)
+		sum = nU + n3 + n4 + n5
+		local sU = nU / sum
+		local s3 = (nU + n3) / sum
+		local s4 = (nU + n3 + n4) / sum
+
+		fmt = [[\fill[fill=%s] (%f\textwidth,0) rectangle (%f\textwidth,\gheight) node [midway] {%.0f\%%};]]
+		local mkgraph = function(color, a, b, num)
+			tex.print(string.format(fmt, color, a, b, num/sum*100))
+		end
+
+		mkgraph("cfail", 0, sU, nU)
+		mkgraph("cthree", sU, s3, n3)
+		mkgraph("cfour", s3, s4, n4)
+		mkgraph("cfive", s4, 1, n5)
+	end
+\end{luacode*}
+
+
+%args: U 3 4 5
+\newcommand{\lut}[4]{
+
+	\vspace{2mm}
+	\begin{tikzpicture}
+	\directlua{draw(#1, #2, #3, #4)}
+	\draw (0,0) rectangle (\textwidth,\gheight);
+	\end{tikzpicture}%
+	\\
+	Totalt: \lp{sum}  --- U: #1 ~~~ 3: #2 ~~~ 4: #3 ~~~ 5: #4
+	\vspace{4mm}
+}
+
+
+
+\begin{document}
+
+\centerline{{\Huge \bf \sffamily \title}}
+\vspace*{\fill}
+
+
+\section*{TKDAT-1}
+
+\kurs{EDA452 Grundläggande Datorteknik}
+\lut{17}{34}{25}{11}
+
+\kurs{TMV216 Linjär algebra}
+\lut{37}{23}{9}{7}
+
+
+\section*{TKDAT-2}
+\kurs{DAT036 Datastrukturer}
+\lut{23}{48}{9}{7}
+
+\kurs{TIF085 Fysik för ingenjörer}
+\lut{35}{28}{6}{12}
+
+\section*{TKDAT-3}
+\kurs{ERE102 Reglerteknik}
+\lut{54}{17}{5}{1}
+
+\vspace*{\fill}
+\raggedleft
+\includegraphics[width=5cm]{logga.pdf} \\
+\url{https://github.com/Cadynum/snd-tentastat}
+
+\end{document}
