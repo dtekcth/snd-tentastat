@@ -1,0 +1,44 @@
+% License: GPL-3
+% Author: Christoffer Öjeling
+
+\documentclass[a4paper]{scrartcl}
+\usepackage[swedish]{babel}
+\usepackage{fontspec}
+\usepackage[top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage{tikz}
+\usepackage[unicode]{hyperref}
+
+\hypersetup{
+	pdftitle = \title,
+	pdfauthor = {Christoffer Öjeling}
+}
+
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\providecolor{cfail}{HTML}{C1C1C1}
+\providecolor{cthree}{HTML}{FFA58B}
+\providecolor{cfour}{HTML}{8DFF8B}
+\providecolor{cfive}{HTML}{FFE98B}
+
+
+\providecommand{\gheight}{1.5cm}
+\newcommand{\kurs}[1]{{\large \bfseries \sffamily #1}}
+
+
+\directlua{dofile("functions.lua")}
+
+
+\begin{document}
+\centerline{{\Huge \bfseries \sffamily \title}}
+\vspace*{\fill}
+
+\directlua{generate("\luaescapestring{\tvstart}","\luaescapestring{\tvstop}")}
+
+\vspace*{\fill}
+\raggedleft
+\includegraphics[width=5cm]{logga.pdf}\\
+\url{https://github.com/Cadynum/snd-tentastat}
+
+\end{document}
