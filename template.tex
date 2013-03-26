@@ -4,8 +4,9 @@
 \documentclass[a4paper]{scrartcl}
 \usepackage[swedish]{babel}
 \usepackage{fontspec}
-\usepackage[top=1.5cm, bottom=1.5cm]{geometry}
+\usepackage[top=2cm, bottom=1.5cm]{geometry}
 \usepackage{tikz}
+\usepackage{float}
 \usepackage[unicode]{hyperref}
 
 \hypersetup{
@@ -32,13 +33,15 @@
 
 \begin{document}
 \centerline{{\Huge \bfseries \sffamily \title}}
-\vspace*{\fill}
+\bigskip
 
 \directlua{generate("\luaescapestring{\tvstart}","\luaescapestring{\tvstop}")}
 
-\vspace*{\fill}
-\raggedleft
-\includegraphics[width=5cm]{logga.pdf}\\
-\url{https://github.com/Cadynum/snd-tentastat}
+
+\begin{figure}[b]
+	\raggedleft
+	\includegraphics[width=5cm]{logga.pdf}\\
+	\url{https://github.com/Cadynum/snd-tentastat}
+\end{figure}
 
 \end{document}

@@ -1,10 +1,10 @@
-EDA452	Grundläggande Datorteknik
-TMV216	Linjär algebra
-DAT036	Datastrukturer
-TIF085	Fysik för ingenjörer
-ERE102	Reglerteknik
-TDA555	Introduktion till funktionell programmering			Introduction to Functional Programming
-TMV210	Inledande diskret matematik
-DAT042	Objektorienterad programmering
-MVE055	Matematisk statistik och diskret matematik
-SSY080	Transformer, signaler och system
+EDA452	1		Grundläggande Datorteknik
+TMV216	1		Linjär algebra
+DAT036	2		Datastrukturer
+TIF085	2		Fysik för ingenjörer
+ERE102	3		Reglerteknik
+TDA555	1		Introduktion till funktionell programmering
+TMV210	1		Inledande diskret matematik
+DAT042	2		Objektorienterad programmering
+MVE055	2		Matematisk statistik och diskret matematik
+SSY080	3		Transformer, signaler och system
