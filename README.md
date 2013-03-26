@@ -35,4 +35,4 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
     * \tvstart — tentaveckans första dag
     * \tvstop — tenteveckans sista dag
 4. Generera PDF-dokumentet:
-    > lualatex --interaction=nonstopmode `<namn.tex>`
+> lualatex --interaction=nonstopmode `<namn.tex>`
