@@ -2,6 +2,17 @@
 
 Genererar PDF-dokument med tentastatistik automatiskt utifrån resultat lagrade i TSV filer med hjälp av LuaLaTeX. Varje latex dokument definierar en tidsperiod att hämta resultat från, förslagsvis en tentavecka.
 
+## Förberedelser
+Du behöver Lualatex, svensk babel samt rekommenderade texlive-filer
+
+I ubuntu bör du installera följande paket (exempelvis genom "sudo apt-get install <paket>"):
+texlive-full
+
+Ubuntu 12.04 verkar ha ett föråldrat texlive, så då bör du köra följande kommandon i terminalen:
+sudo apt-add-repository ppa:texlive-backports/ppa
+sudo apt-get update
+sudo apt-get dist-upgrade
+
 ## Lagringsformat
 Data lagras i TSV-filer (Tab Separated Value).
 Observera att datum måste anges *exakt* enligt [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601): YYYY-MM-DD. 
