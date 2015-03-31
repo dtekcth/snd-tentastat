@@ -1,6 +1,8 @@
 # SND Tentastatistik
 
-Genererar PDF-dokument med tentastatistik automatiskt utifrån resultat lagrade i TSV filer med hjälp av LuaLaTeX. Varje latex dokument definierar en tidsperiod att hämta resultat från, förslagsvis en tentavecka.
+Genererar PDF-dokument med tentastatistik automatiskt utifrån resultat lagrade i TSV filer med hjälp av LuaLaTeX.
+Varje latex dokument definierar en tidsperiod att hämta resultat från, förslagsvis en tentavecka.
+Om inte länken har dött så finns den på http://document.chalmers.se/download?docid=479628742
 
 ## Lagringsformat
 Data lagras i TSV-filer (Tab Separated Value).
@@ -35,4 +37,4 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
     * \tvstart — tentaveckans första dag
     * \tvstop — tenteveckans sista dag
 4. Generera PDF-dokumentet:
-    > lualatex --interaction=nonstopmode `<namn.tex>`
+    > lualatex --interaction=nonstopmode `<namn.tex>
