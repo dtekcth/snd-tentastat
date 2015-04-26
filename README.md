@@ -4,6 +4,13 @@ Genererar PDF-dokument med tentastatistik automatiskt utifrån resultat lagrade 
 Varje latex dokument definierar en tidsperiod att hämta resultat från, förslagsvis en tentavecka.
 Om inte länken har dött så finns den på http://document.chalmers.se/download?docid=479628742
 
+## Förberedelser
+Du behöver Lualatex, svensk babel samt rekommenderade texlive-filer
+
+I ubuntu bör du installera följande paket (exempelvis genom "sudo apt-get install <paket>"):
+texlive-full
+
+
 ## Lagringsformat
 Data lagras i TSV-filer (Tab Separated Value).
 Observera att datum måste anges *exakt* enligt [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601): YYYY-MM-DD. 
@@ -37,4 +44,4 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
     * \tvstart — tentaveckans första dag
     * \tvstop — tenteveckans sista dag
 4. Generera PDF-dokumentet:
-    > lualatex --interaction=nonstopmode `<namn.tex>
+    > lualatex --interaction=nonstopmode `<namn.tex>`
