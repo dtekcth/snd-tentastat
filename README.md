@@ -2,7 +2,6 @@
 
 Genererar PDF-dokument med tentastatistik automatiskt utifrån resultat lagrade i TSV filer med hjälp av LuaLaTeX.
 Varje latex dokument definierar en tidsperiod att hämta resultat från, förslagsvis en tentavecka.
-Om inte länken har dött så finns den på http://document.chalmers.se/download?docid=479628742
 
 ## Förberedelser
 Du behöver Lualatex, svensk babel samt rekommenderade texlive-filer
@@ -46,3 +45,9 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
 4. Generera PDF-dokumentet:
     > lualatex --interaction=nonstopmode `tex-stats/<namn.tex>`
 5. Flytta PDF-dokumentet till `pdf-stats`
+
+
+## Automatiskt generera resultat från Chalmers statistikfil
+Kräver Python 3.
+1. Ladda ner senaste http://document.chalmers.se/download?docid=479628742 och placera i denna mapp.
+2. Kör `python generate.py > resultat.tsv`
