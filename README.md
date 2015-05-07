@@ -48,6 +48,8 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
 
 
 ## Automatiskt generera resultat från Chalmers statistikfil
-Kräver Python 3.
+Kräver Python 3. För att slippa omtentor genereras endast tentor som har fler än 15 deltagare.
+
 1. Ladda ner senaste http://document.chalmers.se/download?docid=479628742 och placera i denna mapp.
-2. Kör `python generate.py > resultat.tsv`
+2. Lägg till eventuella nya kurser i `kurskoder.tsv`. Scriptet genererar bara ner resultat för kurser definierade där.
+3. Kör `python generate.py > resultat.tsv`
