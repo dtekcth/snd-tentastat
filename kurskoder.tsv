@@ -23,11 +23,17 @@ EEM076	1		Elektriska kretsar och fält
 DATX02A	3		Kandidatarbete vid Data- och informationsteknik, del A
 DATX02B	3		Kandidatarbete vid Data- och informationsteknik, del B
 DAT290	2		Datatekniskt projekt
-TDA383	2		Parallell programmering
+%TDA383	2		Parallell programmering
 DAT216	3		Design och konstruktion av grafiska gränssnitt
 EDA222	3		Real Time Systems
 EDA263	3		Datasäkerhet
 MVE270	3		Flervariabelanalys
 TDA342	3		Avancerad funktionell programmering
 TDA357	3		Databaser
-TDA289	3		Människa - dator interaktion - inlämningsuppgift
+TDA289	3		Människa-dator interaktion - inlämningsuppgift
+DAT076	3		Web-applikationer
+DAT255	3		Software engineering project
+FFY143	3		Fysik 2
+LSP530	3		Skönlitteratur på engelska för ingenjörer
+MVE085	3		Flervariabelanalys
+TIN093	3		Algorithms
