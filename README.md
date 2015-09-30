@@ -6,8 +6,8 @@ Varje latex dokument definierar en tidsperiod att hämta resultat från, försla
 ## Förberedelser
 Du behöver Lualatex, svensk babel samt rekommenderade texlive-filer
 
-I ubuntu bör du installera följande paket (exempelvis genom "sudo apt-get install <paket>"):
-texlive-full
+I Ubuntu bör du installera följande paket (exempelvis genom "sudo apt-get install <paket>"):
+texlive-full texlive-xetex python3-xlrd texlive-lang-european
 
 
 ## Lagringsformat
@@ -48,7 +48,7 @@ Ytterligare en tentavecka har passerat och det är din uppgift i studienämnden 
 
 
 ## Automatiskt generera resultat från Chalmers statistikfil
-Kräver Python 3. För att slippa omtentor genereras endast tentor som har fler än 15 deltagare.
+Kräver Python 3 och pythonpaketet xlrd. Om det behövs, byt namn på kalkylarket till Statistik_över_kursresultat.xlsx. För att slippa omtentor genereras endast tentor som har fler än 15 deltagare.
 
 1. Ladda ner senaste http://document.chalmers.se/download?docid=479628742 och placera i denna mapp.
 2. Lägg till eventuella nya kurser i `kurskoder.tsv`. Scriptet genererar bara ner resultat för kurser definierade där.
