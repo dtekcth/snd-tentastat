@@ -10,3 +10,5 @@
 *.toc
 *.aux
 *.xlsx
+*.*~
+resultat.tsv

@@ -27,9 +27,9 @@ SSY080	3		Transformer, signaler och system
 FFY143	3		Fysik 2
 LSP530	3		Skönlitteratur på engelska för ingenjörer
 MVE085	3		Flervariabelanalys
-TDA383	3		Parallell programmering
 TIN093	3		Algoritmer
 ERE102	3		Reglerteknik
+ERE103	3		Reglerteknik
 ENM155	3		Modellering av hållbara energisystem
 DATX02A	3		Kandidatarbete vid Data- och informationsteknik, del A
 DATX02B	3		Kandidatarbete vid Data- och informationsteknik, del B
@@ -42,22 +42,56 @@ TDA342	3		Avancerad funktionell programmering
 TDA357	3		Databaser
 TDA289	3		Människa-dator interaktion inlämningsuppgift
 DAT076	3		Web-applikationer
-DAT255	3		Software engineering project
 DAT026	3		Matematisk modellering och problemlösning
 EOE054	3		Mätteknik
 ETI146	3		Elektronik
 MVE255	3		Matematisk analys i flera variabler
 MVE370	3		Matematik och samhälle, inlämningsuppgift
 TEK130	3		Vetenskapshistoria
-TEK225	3		Teknik och samhälle - projekt
 TIN173	3		Artificiell intelligens - projekt
 TMV027	3	 	Ändliga automater och formella språk
+%DAT255	3		Software engineering project
+%TEK225	3		Teknik och samhälle - projekt
 %MPALG-kurser LP1
+DAT140	A		Typer för bevis och program, inlämningsuppgift
 DAT060	A		Matematisk logik för datavetenskap
-TIN093	A		Algoritmer
-DAT140	A		Typer för bevis och program, inlämningsuppgift 
 TDA293	A		Software engineering med formella metoder
-%MPCSN-kurse LP1
+TIN093	A		Algoritmer
+%MPALG-kurser LP2
+DAT105	A		Datorarkitektur
+DAT151	A		Programspråk
+DAT315	A		Datavetaren i samhället
+TDA183	A		Beräkningsmodeller
+TDA251	A		Avancerade Algoritmer
+TDA352	A		Kryptografi
+TDA361	A		Computer graphics
+TDA452	A		Funktionell programmering
+TDA507	A		Beräkningsmetoder inom bioinformatik
+%MPALG-kurser LP3
+EDA222	A		Realtidssystem
+EDA263	A		Datasäkerhet
+TDA206	A		Diskret optimering
+TDA231	A		Algoritmer för maskininlärning och slutledning
+TDA342	A		Avancerad funktionell programmering
+%MPALG-kurser LP4
+DAT280	A		Parallell funktionell programmering
+EDA491	A		Nätverkssäkerhet
+TDA283	A		Kompilatorkonstruktion
+TDA602	A		Språkbaserad datasäkerhet
+TIN173	A		Artificiell intelligens
+%MPCSN-kurser LP1
+DAT147	C		Teknisk rapportskrivning inom Datorer, Nätverk och System
 EDA122	C		Feltoleranta datorsystem
 EDA387	C		Datornätverk
 EDA283	C		Parallella datorsystem
+TDA383	C		Parallell programmering
+SSY121	C		Introduktionskurs i kommunikationsteknik
+%MPCSN-kurser LP2
+DAT295	C		Autonoma och samverkande fordonssystem
+EDA092	C		Operativsystem
+LEU420	C		Router och switchteknik
+TDA596	C		Distribuerade system
+%MPCSN-kurser LP4
+DAT277	C		Energieffektiva datorsystem
+EDA421	C		Parallella och distribuerade realtidssystem
+SSY145	C		Trådlösa nät
